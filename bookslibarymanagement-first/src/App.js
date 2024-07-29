@@ -2,17 +2,19 @@
 import './App.css';
 import Home from './pages/Home';
 import AddBooks from './pages/AddBooks';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import {  Routes, Route } from "react-router-dom"
+import AllBooks from './component/AllBooks';
 
 function App() {
   return (
     <div >
-      <Router>
+      
         <Routes>
           <Route path="/" element={<Home/>}></Route>
           <Route path="/addbooks" element={<AddBooks/>}></Route>
+          <Route path="/allbooks" element={<AllBooks/>}></Route>
         </Routes>
-      </Router>
+     
   
     </div>
   );
